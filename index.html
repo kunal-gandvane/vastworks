@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VastWorks · Autonomous Intelligence</title>
+  <meta name="description" content="VastWorks deploys self-optimizing multi-agent intelligence and neural automation pipelines for modern enterprises." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css?v=7" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PRELOADER (Animated with YOUR actual logo)  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap" id="preloader-logo-wrap">
+        <img src="./assets/logo_dark.png" alt="VastWorks" class="preloader-logo-img" />
+      </div>
+      <div class="preloader-counter">
+        <span id="preloader-number">0</span><span class="preloader-percent">%</span>
+      </div>
+      <div class="preloader-line">
+        <div class="preloader-line-fill" id="preloader-line-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CUSTOM CURSOR                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-circle"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- THREE.JS BACKGROUND CANVAS                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FIXED HEADER (Logo only, no nav tabs)       -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header id="site-header">
+    <div class="header-logo">
+      <img src="./assets/logo_dark.png" alt="VastWorks" class="header-logo-img" />
+      <span class="header-wordmark">VASTWORKS</span>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MAIN CONTENT                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <main id="smooth-content">
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Autonomous Intelligence Systems</span>
+        </div>
+        <h1 class="hero-title" data-split-lines>
+          Autonomous Agents<br>for Enterprise Operations
+        </h1>
+        <p class="hero-sub">
+          VastWorks deploys self-optimizing multi-agent systems that transform
+          enterprise complexity into automated precision, at any scale.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn-primary" data-magnetic>
+            <span>Book a Demo</span>
+          </a>
+          <a href="#capabilities" class="btn-ghost" data-magnetic>
+            <span>Explore Architecture</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT / MISSION (Redesigned & Engaging) ─── -->
+    <section id="statement">
+      <div class="statement-inner">
+        <div class="section-label center-label">
+          <span class="label-line"></span>
+          <span>Engineering Philosophy</span>
+          <span class="label-line"></span>
+        </div>
+        
+        <h2 class="statement-title">
+          Built for Real Enterprise Infrastructure
+        </h2>
+
+        <p class="statement-lead" data-split-words>
+          We do not build generic AI tools. We engineer complete autonomous nervous systems
+          that integrate directly into proprietary enterprise infrastructures, learning, adapting,
+          and executing mission-critical decisions faster than human capacity.
+        </p>
+
+        <!-- Interactive 3-Pillar Architecture Showcase -->
+        <div class="pillars-grid">
+          <div class="pillar-card" data-tilt>
+            <div class="pillar-glow"></div>
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <h4>Autonomous Cognition</h4>
+            <p>Agents that break down a business task into steps and execute them with minimal manual handoff.</p>
+          </div>
+
+          <div class="pillar-card" data-tilt>
+            <div class="pillar-glow"></div>
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h4>Built for Production Workloads</h4>
+            <p>Optimized inference pipelines designed for continuous operation at enterprise volume.</p>
+          </div>
+
+          <div class="pillar-card" data-tilt>
+            <div class="pillar-glow"></div>
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <h4>Deployed on Your Infrastructure</h4>
+            <p>Deployable within your own cloud or on-premise environment, with no data leaving your systems by default.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CAPABILITIES (Bento Grid — Crisp, No Numbers, No Tags) ─── -->
+    <section id="capabilities">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Core Architecture</span>
+      </div>
+      <div class="bento-grid">
+        <!-- Card 1: Large -->
+        <div class="bento-card bento-large" data-tilt>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Autonomous Agent Swarms</h3>
+          <p>Self-coordinating multi-agent networks that decompose complex enterprise workflows into parallel autonomous operations with minimal manual coordination.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bento-card" data-tilt>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3>Predictive Decision Engines</h3>
+          <p>Real-time forecasting and algorithmic decision pipelines built to surface actionable patterns from your operational data.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bento-card" data-tilt>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Custom Model Forge</h3>
+          <p>Bespoke multimodal architectures fine-tuned specifically on your data and deployed directly inside your infrastructure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── INDUSTRIES (Clean & Crisp, No 01/02/03, No Fake Stats) ─── -->
+    <section id="industries">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Enterprise Sectors</span>
+      </div>
+      <div class="industries-grid">
+        <!-- Finance -->
+        <div class="industry-card" data-tilt>
+          <div class="industry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8M8 14h8"/></svg>
+          </div>
+          <h3>Finance &amp; FinTech</h3>
+          <p>Algorithmic risk evaluation, autonomous fraud detection networks, synthetic market modeling, and real-time regulatory compliance validation.</p>
+        </div>
+        <!-- Healthcare -->
+        <div class="industry-card" data-tilt>
+          <div class="industry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 006 6 6 6 0 006-6V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3"/><path d="M8 15v1a6 6 0 006 6 6 6 0 006-6v-4"/><path d="M12 12v4m-2-2h4"/></svg>
+          </div>
+          <h3>Healthcare &amp; MedTech</h3>
+          <p>Multimodal diagnostic synthesis, secure clinical record extraction, predictive patient triage, and automated treatment pathway verification.</p>
+        </div>
+        <!-- Logistics -->
+        <div class="industry-card" data-tilt>
+          <div class="industry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Logistics &amp; Supply Chain</h3>
+          <p>Self-routing global fleet intelligence, automated customs processing, predictive inventory allocation, and distributed multi-hub routing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MARQUEE ─── -->
+    <section id="marquee">
+      <div class="marquee-track" data-speed="1">
+        <div class="marquee-content">
+          <span>INTELLIGENCE</span><span class="marquee-dot">◆</span>
+          <span>AUTOMATION</span><span class="marquee-dot">◆</span>
+          <span>PRECISION</span><span class="marquee-dot">◆</span>
+          <span>SCALE</span><span class="marquee-dot">◆</span>
+          <span>VELOCITY</span><span class="marquee-dot">◆</span>
+          <span>AUTONOMY</span><span class="marquee-dot">◆</span>
+          <span>INTELLIGENCE</span><span class="marquee-dot">◆</span>
+          <span>AUTOMATION</span><span class="marquee-dot">◆</span>
+          <span>PRECISION</span><span class="marquee-dot">◆</span>
+          <span>SCALE</span><span class="marquee-dot">◆</span>
+          <span>VELOCITY</span><span class="marquee-dot">◆</span>
+          <span>AUTONOMY</span><span class="marquee-dot">◆</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>INTELLIGENCE</span><span class="marquee-dot">◆</span>
+          <span>AUTOMATION</span><span class="marquee-dot">◆</span>
+          <span>PRECISION</span><span class="marquee-dot">◆</span>
+          <span>SCALE</span><span class="marquee-dot">◆</span>
+          <span>VELOCITY</span><span class="marquee-dot">◆</span>
+          <span>AUTONOMY</span><span class="marquee-dot">◆</span>
+          <span>INTELLIGENCE</span><span class="marquee-dot">◆</span>
+          <span>AUTOMATION</span><span class="marquee-dot">◆</span>
+          <span>PRECISION</span><span class="marquee-dot">◆</span>
+          <span>SCALE</span><span class="marquee-dot">◆</span>
+          <span>VELOCITY</span><span class="marquee-dot">◆</span>
+          <span>AUTONOMY</span><span class="marquee-dot">◆</span>
+        </div>
+      </div>
+      <div class="marquee-track marquee-reverse" data-speed="0.7">
+        <div class="marquee-content">
+          <span>NEURAL SEARCH</span><span class="marquee-dot">◆</span>
+          <span>AGENT SWARMS</span><span class="marquee-dot">◆</span>
+          <span>PREDICTIVE AI</span><span class="marquee-dot">◆</span>
+          <span>CUSTOM MODELS</span><span class="marquee-dot">◆</span>
+          <span>ENTERPRISE RAG</span><span class="marquee-dot">◆</span>
+          <span>ZERO LATENCY</span><span class="marquee-dot">◆</span>
+          <span>NEURAL SEARCH</span><span class="marquee-dot">◆</span>
+          <span>AGENT SWARMS</span><span class="marquee-dot">◆</span>
+          <span>PREDICTIVE AI</span><span class="marquee-dot">◆</span>
+          <span>CUSTOM MODELS</span><span class="marquee-dot">◆</span>
+          <span>ENTERPRISE RAG</span><span class="marquee-dot">◆</span>
+          <span>ZERO LATENCY</span><span class="marquee-dot">◆</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>NEURAL SEARCH</span><span class="marquee-dot">◆</span>
+          <span>AGENT SWARMS</span><span class="marquee-dot">◆</span>
+          <span>PREDICTIVE AI</span><span class="marquee-dot">◆</span>
+          <span>CUSTOM MODELS</span><span class="marquee-dot">◆</span>
+          <span>ENTERPRISE RAG</span><span class="marquee-dot">◆</span>
+          <span>ZERO LATENCY</span><span class="marquee-dot">◆</span>
+          <span>NEURAL SEARCH</span><span class="marquee-dot">◆</span>
+          <span>AGENT SWARMS</span><span class="marquee-dot">◆</span>
+          <span>PREDICTIVE AI</span><span class="marquee-dot">◆</span>
+          <span>CUSTOM MODELS</span><span class="marquee-dot">◆</span>
+          <span>ENTERPRISE RAG</span><span class="marquee-dot">◆</span>
+          <span>ZERO LATENCY</span><span class="marquee-dot">◆</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT (Crazy Kinetic Email) ─── -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="contact-label">
+          <span class="label-line"></span>
+          <span>Initiate Protocol</span>
+        </div>
+        <h2 class="contact-headline" data-split-lines>
+          Ready to Automate<br/>Your Workflows?
+        </h2>
+        <p class="contact-sub">
+          Get in touch with our team.
+        </p>
+
+        <!-- The Kinetic Email Deck -->
+        <div class="email-deck" data-magnetic>
+          <canvas id="email-particles"></canvas>
+          <div class="email-deck-inner">
+            <div class="email-meta">
+              <span class="email-protocol">
+                <span class="protocol-dot"></span>
+                Direct Enterprise Protocol
+              </span>
+            </div>
+            <div class="email-address" id="email-address">
+              team@vastworks.tech
+            </div>
+            <button class="email-copy-btn" id="copy-email-btn" data-magnetic>
+              <span class="copy-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              </span>
+              <span class="copy-text" id="copy-text">Click to Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Large kinetic contact text -->
+        <div class="contact-big-text" aria-hidden="true">
+          <span data-magnetic>VAST</span><span data-magnetic>WORKS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer id="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/logo_dark.png" alt="VastWorks" class="footer-logo" />
+          <span>VASTWORKS</span>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 VastWorks. All rights reserved.
+        </div>
+        <div class="footer-tagline">
+          Autonomous Intelligence at Scale.
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SCRIPTS                                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="./js/app.js?v=7"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "vastworks",
+  "version": "1.0.0",
+  "description": "VastWorks — Autonomous Intelligence | Monochrome Luxury Single-Page Experience",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "author": "VastWorks",
+  "license": "MIT"
+}

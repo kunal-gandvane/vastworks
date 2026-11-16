@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Vision Intern · VastWorks</title>
+  <meta name="description" content="Computer Vision Winter Internship at VastWorks. Hands-on applied AI engineering for IIT Bombay students." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css?v=9" />
+
+  <!-- Tally Embed Script -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CUSTOM CURSOR                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-circle"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- THREE.JS BACKGROUND CANVAS                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FIXED HEADER                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header id="site-header">
+    <a href="./index.html" class="header-logo">
+      <img src="./assets/logo_dark.png" alt="VastWorks" class="header-logo-img" />
+      <span class="header-wordmark">VASTWORKS</span>
+    </a>
+    <a href="./careers.html" class="header-cta" data-magnetic>
+      <span>All Roles</span>
+    </a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MAIN CONTENT                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <main id="smooth-content">
+
+    <article class="job-detail-page">
+      
+      <!-- Job Header -->
+      <div class="job-detail-header">
+        <div class="job-breadcrumb">
+          <a href="./careers.html">Careers</a>
+          <span>/</span>
+          <span>Computer Vision Intern</span>
+        </div>
+        <h1 class="job-detail-title">Computer Vision Intern</h1>
+        <div class="job-list-tags">
+          <span class="job-status-pill">
+            <span class="status-dot"></span>
+            Position: Open
+          </span>
+          <span class="job-meta-pill">Location: Remote</span>
+          <span class="job-meta-pill">Eligibility: IIT Bombay Only</span>
+          <span class="job-meta-pill">Term: Winter Internship</span>
+        </div>
+      </div>
+
+      <!-- Job Content -->
+      <div class="job-detail-content">
+
+        <!-- About VastWorks -->
+        <div class="job-detail-block">
+          <h3>About VastWorks</h3>
+          <p>
+            VastWorks builds AI systems for enterprise workflow automation covering computer vision,
+            agent-based automation, and retrieval systems built around real operational problems.
+            We’re an early-stage team based out of IIT Bombay, working on applied AI with a focus on practical,
+            demonstrable results over generic tooling.
+          </p>
+        </div>
+
+        <!-- About the Role -->
+        <div class="job-detail-block">
+          <h3>About the Role</h3>
+          <p>
+            We’re looking for a Computer Vision Intern to join our team for this winter. You’ll work directly on
+            computer vision projects covering areas like object detection, image classification, and related CV pipelines
+            contributing to real systems we’re building and showcasing. This is hands-on, project-based work where you’ll
+            get to apply what you know (or are learning) to a live, evolving product.
+          </p>
+        </div>
+
+        <!-- What You'll Do -->
+        <div class="job-detail-block">
+          <h3>What You’ll Do</h3>
+          <ul>
+            <li>Work on computer vision projects end-to-end from data handling to model building to evaluation</li>
+            <li>Collaborate closely with the founding team and other interns</li>
+            <li>Get exposure to how a CV system is built and deployed in a real-world, enterprise-facing context</li>
+            <li>Contribute to projects that will be showcased as part of VastWorks’ portfolio</li>
+          </ul>
+        </div>
+
+        <!-- Eligibility -->
+        <div class="job-detail-block">
+          <h3>Eligibility</h3>
+          <ul>
+            <li>B.Tech or Dual Degree students</li>
+            <li>IIT Bombay students only</li>
+            <li>1st, 2nd, or 3rd year students</li>
+            <li>No prior experience required but relevant coursework, projects, or exposure to CV/ML is appreciated</li>
+            <li>Genuine interest in computer vision and a willingness to learn are what matter most</li>
+          </ul>
+        </div>
+
+        <!-- What We're Looking For -->
+        <div class="job-detail-block">
+          <h3>What We’re Looking For</h3>
+          <ul>
+            <li>Curiosity and willingness to learn computer vision concepts and tools</li>
+            <li>Basic programming familiarity (Python preferred)</li>
+            <li>Ability to commit a few hours a week consistently through the winter break</li>
+            <li>Bonus: any prior exposure to ML/CV through coursework, SoC, clubs, or personal projects not required, but a plus</li>
+          </ul>
+        </div>
+
+        <!-- Details -->
+        <div class="job-detail-block">
+          <h3>Details</h3>
+          <ul>
+            <li><strong>Duration:</strong> Winter Internship (dates flexible, to be finalized with selected interns)</li>
+            <li><strong>Mode:</strong> Remote</li>
+            <li><strong>What you’ll gain:</strong> Hands-on project experience, direct mentorship, a certificate of completion, and a real project to add to your portfolio/resume</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Tally Application Form Card -->
+      <div class="tally-card" id="apply">
+        <div class="tally-header">
+          <div class="section-label center-label">
+            <span class="label-line"></span>
+            <span>Application Protocol</span>
+            <span class="label-line"></span>
+          </div>
+          <h3>Apply for this Position</h3>
+          <p>Submit your details below. Applications are reviewed directly by our founding team.</p>
+        </div>
+
+        <!-- Embedded Tally Form -->
+        <div class="tally-frame-wrap">
+          <iframe
+            data-tally-src="https://tally.so/r/q5GLgd?transparentBackground=1&formEventsForwarding=1"
+            width="100%"
+            height="700"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Computer Vision Intern">
+          </iframe>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ─── FOOTER ─── -->
+    <footer id="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/logo_dark.png" alt="VastWorks" class="footer-logo" />
+          <span>VASTWORKS</span>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 VastWorks. All rights reserved.
+        </div>
+        <div class="footer-tagline">
+          Autonomous Intelligence at Scale.
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SCRIPTS                                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="./js/app.js?v=9"></script>
+</body>
+</html>

@@ -19,6 +19,10 @@ app.get('/careers', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'careers.html'));
 });
 
+app.get('/cv-intern', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'cv-intern.html'));
+});
+
 // Default fallback to index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));

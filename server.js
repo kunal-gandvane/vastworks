@@ -14,7 +14,12 @@ app.use(express.static(path.join(__dirname, 'public'), {
   }
 }));
 
-// Single page — all routes serve index.html
+// Routes
+app.get('/careers', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'careers.html'));
+});
+
+// Default fallback to index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });

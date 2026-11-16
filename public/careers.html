@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Careers · Computer Vision Intern · VastWorks</title>
+  <meta name="description" content="Join the VastWorks engineering core as a Computer Vision Intern. Building autonomous agent systems and spatial perception for modern enterprises." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css?v=8" />
+
+  <!-- Tally Embed Script -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CUSTOM CURSOR                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-circle"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- THREE.JS BACKGROUND CANVAS                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FIXED HEADER                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header id="site-header">
+    <a href="./index.html" class="header-logo">
+      <img src="./assets/logo_dark.png" alt="VastWorks" class="header-logo-img" />
+      <span class="header-wordmark">VASTWORKS</span>
+    </a>
+    <a href="./index.html" class="header-cta" data-magnetic>
+      <span>Home</span>
+    </a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MAIN CONTENT                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <main id="smooth-content">
+
+    <!-- ─── CAREERS HERO ─── -->
+    <section class="careers-hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Opportunity · Join the Core</span>
+        </div>
+        <h1 class="hero-title" data-split-lines>
+          Careers at VastWorks
+        </h1>
+        <p class="hero-sub">
+          We are assembling a specialized engineering core building autonomous intelligence
+          and real-time perception for mission-critical enterprise systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── ROLE & APPLICATION SECTION ─── -->
+    <section class="careers-content">
+      
+      <!-- Position Overview Card -->
+      <div class="career-card" data-tilt>
+        <div class="career-role-header">
+          <div class="career-tags">
+            <span class="career-tag highlight">Position: Active</span>
+            <span class="career-tag">Location: Remote / Mumbai</span>
+            <span class="career-tag">Type: Internship</span>
+            <span class="career-tag">Team: Vision &amp; Autonomous Agents</span>
+          </div>
+          <h2 class="career-role-title">Computer Vision Intern</h2>
+        </div>
+
+        <p class="career-desc">
+          As a Computer Vision Intern at VastWorks, you will work on state-of-the-art visual perception
+          pipelines and multimodal models designed to perceive, analyze, and act on visual enterprise data in real time.
+        </p>
+
+        <h4 class="career-section-title">What You Will Build</h4>
+        <ul class="career-list">
+          <li>High-throughput video stream analytics and visual feature extraction pipelines.</li>
+          <li>Real-time object detection, semantic segmentation, and temporal spatial tracking models.</li>
+          <li>Multimodal reasoning experiments combining Vision-Language-Action Models (VLAMs) with autonomous agent workflows.</li>
+          <li>Inference optimization pipelines for sub-millisecond edge and GPU deployment.</li>
+        </ul>
+
+        <h4 class="career-section-title">What We Look For</h4>
+        <ul class="career-list">
+          <li>Strong proficiency in Python, PyTorch, and OpenCV.</li>
+          <li>Solid grasp of foundational computer vision architectures (YOLO, Vision Transformers, self-supervised models).</li>
+          <li>Hands-on experience training, fine-tuning, or optimizing neural networks on custom visual datasets.</li>
+          <li>High agency, fast execution velocity, and hunger to build production-grade enterprise AI.</li>
+        </ul>
+      </div>
+
+      <!-- Tally Application Form Card -->
+      <div class="tally-card">
+        <div class="tally-header">
+          <div class="section-label center-label">
+            <span class="label-line"></span>
+            <span>Application Protocol</span>
+            <span class="label-line"></span>
+          </div>
+          <h3>Apply for this Position</h3>
+          <p>Submit your details and CV below. Applications are reviewed directly by our engineering core.</p>
+        </div>
+
+        <!-- Embedded Tally Form -->
+        <div class="tally-frame-wrap">
+          <iframe
+            data-tally-src="https://tally.so/r/q5GLgd?transparentBackground=1&formEventsForwarding=1"
+            width="100%"
+            height="700"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Computer Vision Intern">
+          </iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer id="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/logo_dark.png" alt="VastWorks" class="footer-logo" />
+          <span>VASTWORKS</span>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 VastWorks. All rights reserved.
+        </div>
+        <div class="footer-tagline">
+          Autonomous Intelligence at Scale.
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SCRIPTS                                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="./js/app.js?v=8"></script>
+</body>
+</html>

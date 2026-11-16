@@ -16,6 +16,11 @@
   function initPreloader(onExit) {
     return new Promise((resolve) => {
       const preloader   = document.getElementById('preloader');
+      if (!preloader) {
+        if (typeof onExit === 'function') onExit();
+        resolve();
+        return;
+      }
       const logoImg     = document.querySelector('.preloader-logo-img');
       const numberEl    = document.getElementById('preloader-number');
       const lineFill    = document.getElementById('preloader-line-fill');
@@ -357,25 +362,31 @@
     }
 
     // Hero badge floats up
-    tl.to('.hero-badge', {
-      opacity: 1,
-      y: 0,
-      duration: 0.85,
-    }, 0.15);
+    if (document.querySelector('.hero-badge')) {
+      tl.to('.hero-badge', {
+        opacity: 1,
+        y: 0,
+        duration: 0.85,
+      }, 0.15);
+    }
 
     // Hero subtitle floats up
-    tl.to('.hero-sub', {
-      opacity: 1,
-      y: 0,
-      duration: 0.85,
-    }, 0.35);
+    if (document.querySelector('.hero-sub')) {
+      tl.to('.hero-sub', {
+        opacity: 1,
+        y: 0,
+        duration: 0.85,
+      }, 0.35);
+    }
 
     // Hero CTA buttons glide in
-    tl.to('.hero-cta-group', {
-      opacity: 1,
-      y: 0,
-      duration: 0.85,
-    }, 0.55);
+    if (document.querySelector('.hero-cta-group')) {
+      tl.to('.hero-cta-group', {
+        opacity: 1,
+        y: 0,
+        duration: 0.85,
+      }, 0.55);
+    }
   }
 
   /* ═══════════════════════════════════════════════
@@ -383,7 +394,7 @@
      ═══════════════════════════════════════════════ */
   function initCards() {
     // Scroll reveal for all cards
-    const cards = document.querySelectorAll('.bento-card, .industry-card, .pillar-card');
+    const cards = document.querySelectorAll('.bento-card, .industry-card, .pillar-card, .career-card, .tally-card');
     cards.forEach((card, i) => {
       gsap.from(card, {
         opacity: 0,
